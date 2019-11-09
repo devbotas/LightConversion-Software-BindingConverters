@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightConversion.Software.BindingConverters", "LightConversion.Software.BindingConverters\LightConversion.Software.BindingConverters.csproj", "{14B38919-BBC1-40F9-9FE1-AFB9FB5AD020}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{5A362167-94B1-4F61-AE04-A97A49DE3A5E}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Deploy|Any CPU = Deploy|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14B38919-BBC1-40F9-9FE1-AFB9FB5AD020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14B38919-BBC1-40F9-9FE1-AFB9FB5AD020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14B38919-BBC1-40F9-9FE1-AFB9FB5AD020}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
+		{14B38919-BBC1-40F9-9FE1-AFB9FB5AD020}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
+		{14B38919-BBC1-40F9-9FE1-AFB9FB5AD020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14B38919-BBC1-40F9-9FE1-AFB9FB5AD020}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72F1CC5F-F86D-4B8E-B9B3-639455599704}
+	EndGlobalSection
+EndGlobal

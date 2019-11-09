@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14B38919-BBC1-40F9-9FE1-AFB9FB5AD020}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LightConversion.Software.BindingConverters</RootNamespace>
+    <AssemblyName>LightConversion.Software.BindingConverters</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FullNET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;FullNET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>bin\Release\LightConversion.Software.BindingConverters.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Deploy|AnyCPU'">
+    <OutputPath>bin\Deploy\</OutputPath>
+    <DefineConstants>TRACE;FullNET</DefineConstants>
+    <DocumentationFile>bin\Deploy\LightConversion.Examples.MultiplatformClassLibraryExample.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Class.BooleanToVisibilityConverter.cs" />
+    <Compile Include="Code\Class.InvertingConverter.cs" />
+    <Compile Include="Code\Class.MultiAndConverter.cs" />
+    <Compile Include="Code\Class.MultiAndToVisibilityConverter.cs" />
+    <Compile Include="Code\Class.MultiOrConverter.cs" />
+    <Compile Include="Code\Class.MultiOrToVisibilityConverter.cs" />
+    <Compile Include="Code\Class.StringToVisibilityConverter.cs" />
+    <Compile Include="Code\QuickConverter\Class.Binding.cs" />
+    <Compile Include="Code\QuickConverter\Class.ChainedConverterExceptionEventArgs.cs" />
+    <Compile Include="Code\QuickConverter\Class.ConverterParameterMode.cs" />
+    <Compile Include="Code\QuickConverter\Class.DataContainer.cs" />
+    <Compile Include="Code\QuickConverter\Class.DynamicMultiConverter.cs" />
+    <Compile Include="Code\QuickConverter\Class.DynamicSingleConverter.cs" />
+    <Compile Include="Code\QuickConverter\Class.EquationTokenizer.cs" />
+    <Compile Include="Code\QuickConverter\Class.MarkupExtensionExceptionEventArgs.cs" />
+    <Compile Include="Code\QuickConverter\Class.MultiBinding.cs" />
+    <Compile Include="Code\QuickConverter\Class.Operator.cs" />
+    <Compile Include="Code\QuickConverter\Class.QuickConverter.cs" />
+    <Compile Include="Code\QuickConverter\Class.QuickConverterEventArgs.cs" />
+    <Compile Include="Code\QuickConverter\Class.QuickConverterEventType.cs" />
+    <Compile Include="Code\QuickConverter\Class.QuickEvent.cs" />
+    <Compile Include="Code\QuickConverter\Class.QuickEventHandler.cs" />
+    <Compile Include="Code\QuickConverter\Class.QuickMultiConverter.cs" />
+    <Compile Include="Code\QuickConverter\Class.QuickValue.cs" />
+    <Compile Include="Code\QuickConverter\Class.RuntimeEventHandlerExceptionEventArgs.cs" />
+    <Compile Include="Code\QuickConverter\Class.RuntimeMultiConvertExceptionEventArgs.cs" />
+    <Compile Include="Code\QuickConverter\Class.RuntimeSingleConvertExceptionEventArgs.cs" />
+    <Compile Include="Code\QuickConverter\Class.TokenizationFailureEventArgs.cs" />
+    <Compile Include="Code\QuickConverter\Class.TokenizationSuccessEventArgs.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.ArgumentListToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.AssignmentToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.AsToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.BinaryOperatorToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.BracketedToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.ConstantToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.ConstructorToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.IndexerToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.InstanceFunctionToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.InstanceMemberToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.IPostToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.IsToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.LambdaAssignmentToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.LambdaToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.NullCoalesceOperatorToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.NullPropagatingToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.ParameterToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.PostTokenChainToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.StaticFunctionToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.StaticMemberToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.TernaryOperatorToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.ThrowToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.TokenBase.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.TypeCastToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.TypeofToken.cs" />
+    <Compile Include="Code\QuickConverter\Tokens\Class.UnaryOperatorToken.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
